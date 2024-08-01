@@ -37,7 +37,7 @@ class MultipleEndpointsAggregationReactor {
         val startTime = System.currentTimeMillis()
 
         println("Aggregating data from multiple APIs:")
-        val aggregatedData = aggregateData(urls)
+        aggregateData(urls)
             .collectList()
             .block()
 

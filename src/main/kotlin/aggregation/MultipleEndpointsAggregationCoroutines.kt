@@ -51,7 +51,7 @@ class MultipleEndpointsAggregationCoroutines {
         val dataAggregator = MultipleEndpointsAggregationCoroutines()
 
         println("Aggregating data from multiple APIs:")
-        val aggregatedData = dataAggregator.aggregateData(urls)
+        dataAggregator.aggregateData(urls)
 
         val endTime = System.currentTimeMillis()
 
