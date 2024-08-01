@@ -44,8 +44,6 @@ class MultipleEndpointsAggregationReactor {
         val endTime = System.currentTimeMillis()
         val executionTime = endTime - startTime
 
-        println("Aggregated Data:")
-        aggregatedData?.forEach { println(it) }
         println("Execution Time: $executionTime ms")
     }
 }

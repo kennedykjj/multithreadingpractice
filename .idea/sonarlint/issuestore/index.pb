@@ -3,14 +3,6 @@ G
 src/main/kotlin/Main.kt,d/8/d83ae3847b7d408136086cc5e9e95f5f7c126ed5
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-R
-"src/main/kotlin/UsingConcurrent.kt,8/9/89098ab907f90ef9b582e6349e920bfec1ee4037
-O
-src/main/kotlin/UsingReactor.kt,b/4/b4d6ddf40b4baa40b9429d382f0eaf7e99e11795
-R
-"src/main/kotlin/UsingCoroutines.kt,d/1/d1bde8ccf6bdb884b1e8842b75f270b4b6a0cca2
-k
-;src/main/kotlin/aggregation/MultipleEndpointsAggregation.kt,6/e/6e1d4367988d00e12569610293ddec57ffea5ca3
 Z
 *src/main/kotlin/samples/UsingCoroutines.kt,e/d/ed4129f11b2c117d1edb31a93cccfe097c163aff
 Z
@@ -24,3 +16,13 @@ Bsrc/main/kotlin/aggregation/MultipleEndpointsAggregationReactor.kt,9/8/98f98b7
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+^
+.src/test/kotlin/samples/UsingConcurrentTest.kt,c/6/c68d6d3564ffef40ee46025f497068b4194b258e
+^
+.src/test/kotlin/samples/UsingCoroutinesTest.kt,2/e/2e4b473af1810cb59486580c573ac5bdf177b9cb
+[
++src/test/kotlin/samples/UsingReactorTest.kt,4/8/48ab96d750a40a5d72cb90d81f2da178a96312a6
+y
+Isrc/test/kotlin/aggregation/MultipleEndpointsAggregationCoroutinesTest.kt,5/5/55777dab045863c19c4fca69a567f2cdb3c72d44
+v
+Fsrc/test/kotlin/aggregation/MultipleEndpointsAggregationReactorTest.kt,a/6/a6b81ccbd857b433109cf6a3e58a182b3afc0289
