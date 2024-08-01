@@ -21,6 +21,6 @@ fun main() {
 
     println("Executing tasks data aggregation task with coroutines:").also { aggregationCoroutines.runIt(100) } // average 4.5s
 
-    println("Executing tasks data aggregation taskwith reactor:").also { aggregationReactor.runIt(100) } // average 2.3s
+    println("Executing tasks data aggregation task with reactor:").also { aggregationReactor.runIt(100) } // average 2.3s
 
 }

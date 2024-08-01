@@ -21,7 +21,7 @@ class MultipleEndpointsAggregationReactor {
         }.subscribeOn(Schedulers.boundedElastic())
     }
 
-    fun aggregateData(urls: List<String>): Flux<String> {
+    private fun aggregateData(urls: List<String>): Flux<String> {
         return Flux.fromIterable(urls)
             .flatMap { url -> fetchData(url) }
     }
@@ -39,7 +39,7 @@ class MultipleEndpointsAggregationReactor {
         println("Aggregating data from multiple APIs:")
         val aggregatedData = aggregateData(urls)
             .collectList()
-            .block() // Bloquear apenas para fins de demonstração; evite bloquear no código de produção
+            .block()
 
         val endTime = System.currentTimeMillis()
         val executionTime = endTime - startTime
