@@ -1,10 +1,8 @@
-package org.example
+package org.example.samples
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import reactor.core.publisher.Flux
-import reactor.core.scheduler.Schedulers
 import kotlin.random.Random
 
 class UsingCoroutines {

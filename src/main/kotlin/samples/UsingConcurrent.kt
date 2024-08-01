@@ -1,4 +1,4 @@
-package org.example
+package org.example.samples
 
 import java.util.concurrent.Executors
 

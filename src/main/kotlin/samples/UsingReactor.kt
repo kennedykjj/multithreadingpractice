@@ -1,7 +1,8 @@
-package org.example
+package org.example.samples
 
 import reactor.core.publisher.Flux
 import reactor.core.scheduler.Schedulers
+
 class UsingReactor {
 
     fun runIt() {
