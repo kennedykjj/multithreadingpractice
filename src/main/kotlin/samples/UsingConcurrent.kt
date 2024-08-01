@@ -13,16 +13,22 @@ class UsingConcurrent {
 
         val executor = Executors.newFixedThreadPool(10)
 
+        val startTime = System.currentTimeMillis()
+
         tasks.forEach { task ->
             executor.submit {
-                val result = execute(task)
-                println("Result: $result")
+                execute(task)
+//                println("Result: $result")
             }
         }
         executor.shutdown()
         while (!executor.isTerminated) {
             // wait for it.....
         }
+
+        val endTime = System.currentTimeMillis()
+        println("Execution Time: ${endTime - startTime} ms")
+
 
 
     }

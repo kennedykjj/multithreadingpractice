@@ -12,6 +12,7 @@ class UsingReactor {
             "Task11", "Task12", "Task13", "Task14", "Task15",
             "Task16", "Task17", "Task18", "Task19", "Task20"
         )
+        val startTime = System.currentTimeMillis()
 
         Flux.fromIterable(tasks)
             .flatMap { task ->
@@ -21,11 +22,14 @@ class UsingReactor {
                     }
                     .subscribeOn(Schedulers.boundedElastic())
             }
-            .doOnNext { result ->
-                println("Result: $result")
+            .doOnNext {
+//                println("Result: $result")
             }
             // wait for it...
             .blockLast()
+
+        val endTime = System.currentTimeMillis()
+        println("Execution Time: ${endTime - startTime} ms")
     }
 
     private fun execute(task: String): String {

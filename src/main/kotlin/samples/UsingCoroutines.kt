@@ -16,16 +16,20 @@ class UsingCoroutines {
         )
         runBlocking {
 
+            val startTime = System.currentTimeMillis()
 
             val jobs = tasks.map { task ->
                 launch(Dispatchers.Default) {
-                    val result = execute(task)
-                    println("Result: $result")
+                     execute(task)
+//                    println("Result: $result")
                 }
             }
 
             // wait for it...
             jobs.forEach { it.join() }
+
+            val endTime = System.currentTimeMillis()
+            println("Execution Time: ${endTime - startTime} ms")
         }
     }
 
