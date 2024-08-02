@@ -11,10 +11,11 @@ class SimulatorTest {
         val startTime = System.currentTimeMillis()
 
         assertDoesNotThrow {
-            simulator.simulate(1000000)
             simulator.applyRandomMarketEvent()
-            simulator.printMarketStatus()
+            simulator.simulate(1000000)
         }
+
+        simulator.printMarketStatus()
 
         val endTime = System.currentTimeMillis()
         val executionTime = endTime - startTime

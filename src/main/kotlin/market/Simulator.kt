@@ -43,7 +43,7 @@ class Simulator {
     }
 
     fun applyRandomMarketEvent() {
-        val event = MarketEvent("News Impact", Random.nextDouble(-0.05, 0.05))
+        val event = MarketEvent("Something happened", Random.nextDouble(-0.05, 0.05))
         market.applyMarketEvent(event)
     }
 
